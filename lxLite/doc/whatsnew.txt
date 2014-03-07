@@ -8,9 +8,21 @@
  [-] Removed feature
  [!] Bug fix
 
+ 1.3.4  UNLOCK utility only
+ ----- 01-Mar-2014 compiled by Andreas Buchinger (andi.os2.software@gmx.net)
+  [!]  unlock.exe compiled with proper crt.pas to honor redirection (there is
+       an unlock 1.3.2 version included with some eCS distributions which
+       introduced the redirction bug)
+    
+       On the other hand the unlock included with eCS does allow unlocking UDF
+       drives which this version does not. If you have the source code for this
+       feature drop me an email to include it in future versions.
+
+  [+]  bldlevel information
+
  1.3.3
  ----- 05-Dec-2003
-  [*]  Page alignment code cleanup 
+  [*]  Page alignment code cleanup
   [!]  Some "already processed" binaries were rejected to unpack
   [!]  Name tables handling, no junk entries anymore
   [!]  Compression was slightly degraded in 1.3.2
@@ -43,7 +55,7 @@
        It causes failure when processing some modules.
   [!]  Now lxLite can process LX-modules with fake offset to an absent
        FixUp Record Table.
-  [!]  Now lxLite can process LX-modules with zero Object Iterated Pages 
+  [!]  Now lxLite can process LX-modules with zero Object Iterated Pages
        Offset (in this case it's considered equal to Object Page Table Offset).
   [!]  Bug in error reporting has been fixed.
 

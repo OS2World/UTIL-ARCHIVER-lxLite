@@ -4,7 +4,7 @@ Unit lxLite_Global;
 Interface uses exe286, exe386, os2exe, Collect, SysLib, Country;
 
 const
- Version          : string[6] = '1.3.3';
+ Version          : string[6] = '1.3.4';
 
 { Message Identifiers }
  msgProgHeader1   = 100;

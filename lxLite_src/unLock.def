@@ -1,5 +1,5 @@
 NAME unLock WINDOWCOMPAT
 EXETYPE OS2
-DESCRIPTION "Executable unlocker for OS/2"
+DESCRIPTION "@#Andreas Buchinger:1.3#@##1## 2014-03-01 15:44         BANZAI::::4::@@  unLock utility from lxlite package"
 STUB "..\lxLite\stub_min.bin"
 

@@ -2,7 +2,7 @@
 
 set vpbase=p:\vp21
 set PATH=%vpbase%\bin.os2;%PATH%
-set BEGINLIBPATH = %vpbase%\bin.os2;
+set BEGINLIBPATH=%vpbase%\bin.os2;
 
 set vpcopt=/$P+ /$S- /$Speed- /$I- /$AlignCode- /$AlignData- /ucommon;%vpbase%\units.os2;%vpbase%\source\rtl;%vpbase%\source\os2 /i%vpbase%\source\rtl /l%vpbase%\lib.os2 /oout /m
 set rcopt=-r -n -i %vpbase%\source\rtl

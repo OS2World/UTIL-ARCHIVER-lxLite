@@ -189,8 +189,8 @@ var
 
 begin
  TextAttr := $0F;
- Writeln('Ú[ unLock ]ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ[ Version '+Version+' ]¿');
- Writeln('Ã Build 20140301 by Andreas Buchinger Ä No rights reserved Ù');
+ Writeln('Ú[ unLock ]ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ[ Version '+Version+' ]¿');
+ Writeln('Ã Copyright by FRIENDS software  -  build 20140301 by AB Ù');
  TextAttr := $07;
  @OldExit := ExitProc; ExitProc := @MyExitProc;
  New(fNames, Create(8, 8));

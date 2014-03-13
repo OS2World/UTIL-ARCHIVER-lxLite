@@ -1,0 +1,79 @@
+[COMPILER]
+compile=concur|capture|:Compile:&Compile,wmake %n.obj
+make=concur|capture|:Build:&Build,wmake
+rebuild=concur|capture|:Rebuild:&Rebuild,wmake /A
+debug=:Debug:&Debug,wdw lxLite_Unlock.exe
+execute=:Execute:E&xecute,lxLite_Unlock.exe
+user1=hide|:User 1:User 1,
+user2=hide|:User 2:User 2,
+usertool_resource_editor=hide|:Resource Editor:Resource Editor,dlgedit
+workingdir=E:\_work\lxLiteUnlock\trunk\lxLite_src\
+includedirs=%(INCLUDE)
+tagfiles=
+reffile=
+MACRO=\n
+FILTEREXPANSION=1 1 0 1 1
+[FILES]
+E:\_work\lxLiteUnlock\trunk\lxLite_src\chCase.def
+E:\_work\lxLiteUnlock\trunk\lxLite_src\chCase.pas
+E:\_work\lxLiteUnlock\trunk\lxLite_src\exe286.pas
+E:\_work\lxLiteUnlock\trunk\lxLite_src\exe386.pas
+E:\_work\lxLiteUnlock\trunk\lxLite_src\lxLite.def
+E:\_work\lxLiteUnlock\trunk\lxLite_src\lxLite.pas
+E:\_work\lxLiteUnlock\trunk\lxLite_src\lxLite_Global.pas
+E:\_work\lxLiteUnlock\trunk\lxLite_src\lxLite_Objects.pas
+E:\_work\lxLiteUnlock\trunk\lxLite_src\make.cmd
+E:\_work\lxLiteUnlock\trunk\lxLite_src\noEA.def
+E:\_work\lxLiteUnlock\trunk\lxLite_src\noEA.pas
+E:\_work\lxLiteUnlock\trunk\lxLite_src\os2exe.pas
+E:\_work\lxLiteUnlock\trunk\lxLite_src\sysIcons.def
+E:\_work\lxLiteUnlock\trunk\lxLite_src\sysIcons.h
+E:\_work\lxLiteUnlock\trunk\lxLite_src\sysIcons.pas
+E:\_work\lxLiteUnlock\trunk\lxLite_src\unLock.def
+E:\_work\lxLiteUnlock\trunk\lxLite_src\unLock.pas
+E:\_work\lxLiteUnlock\trunk\lxLite_src\common\CmdLine.pas
+E:\_work\lxLiteUnlock\trunk\lxLite_src\common\Collect.pas
+E:\_work\lxLiteUnlock\trunk\lxLite_src\common\Country.pas
+E:\_work\lxLiteUnlock\trunk\lxLite_src\common\Crt.pas
+E:\_work\lxLiteUnlock\trunk\lxLite_src\common\MiscUtil.pas
+E:\_work\lxLiteUnlock\trunk\lxLite_src\common\Streams.pas
+E:\_work\lxLiteUnlock\trunk\lxLite_src\common\StrOp.pas
+E:\_work\lxLiteUnlock\trunk\lxLite_src\common\SysLib.pas
+[ASSOCIATION]
+[STATE]
+SCREEN: 3840 1200 67 26 1830 1141 0 0 N 0 0 0 0 1510 1056
+CWD: E:\_work\lxLiteUnlock\trunk\lxLite_src
+BUFFER: BN="P:\UTIL\VISUALSLICKEDIT40\OS2\vrestore.slk"
+BI: MA=1 254 1  TABS=1 9  WWS=3 IWT=0 ST=0 IN=0 BW=0 US=0 RO=0 SE=0 SN=0 BIN=0 MN=Fundamental	HM=0 MF=1
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=1 WI=5 BI=21 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="E:\_work\lxLiteUnlock\trunk\lxLite_src\unLock.pas"
+BI: MA=1 74 1  TABS=1 4  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Pascal	HM=0 MF=0
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=1 WI=5 BI=18 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="E:\_work\lxLiteUnlock\trunk\lxLite_src\unLock.def"
+BI: MA=1 120 1  TABS=1 5  WWS=1 IWT=1 ST=0 IN=1 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Fundamental	HM=0 MF=0
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=1 WI=5 BI=19 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="E:\_work\lxLiteUnlock\trunk\lxLite_src\make.cmd"
+BI: MA=1 74 1  TABS=1 3  WWS=0 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Rexx	HM=0 MF=32
+VIEW: LN=.431 CL=5 LE=0 CX=5 CY=14 WI=5 BI=20 HT=0 HN=0 HF=0 HC=4
+WINDOW: 443 91 1000 742 -1 -1 N  WF=0 WT=3 "System VIO,6,0,1"
+BUFFER: BN="E:\_work\lxLiteUnlock\trunk\lxLite_src\unLock.def"
+VIEW: LN=.0 CL=1 LE=0 CX=7 CY=1 WI=118 BI=19 HT=0 HN=0 HF=0 HC=4
+WINDOW: 256 80 916 809 -1 -1 N  WF=0 WT=1 "System VIO,6,0,1"
+BUFFER: BN="E:\_work\lxLiteUnlock\trunk\lxLite_src\unLock.pas"
+VIEW: LN=.0 CL=1 LE=0 CX=7 CY=1 WI=117 BI=18 HT=0 HN=0 HF=0 HC=4
+WINDOW: 0 0 1019 994 -1 -1 N  WF=0 WT=2 "System VIO,6,0,1"
+BUFFER: BN="E:\_work\lxLiteUnlock\trunk\lxLite_src\make.cmd"
+VIEW: LN=.431 CL=5 LE=0 CX=11 CY=14 WI=119 BI=20 HT=0 HN=0 HF=0 HC=4
+FILEHIST: 9
+E:\_work\xwlan\trunk\src\ship\instexe.cmd
+E:\_work\xwlan\trunk\notes.txt
+E:\_work\xwlan\trunk\ToDo.txt
+E:\_work\xwlan\trunk\src\ship\instwgt.cmd
+E:\_work\xwlan\ship\instwgt.cmd
+T:\Temp\unLock_src_VEIT\unLock.pas
+E:\_work\lxLiteUnlock\trunk\lxLite_src\make.cmd
+E:\_work\lxLiteUnlock\trunk\lxLite_src\unLock.pas
+E:\_work\lxLiteUnlock\trunk\lxLite_src\unLock.def
+PRINTER: 2
+PRINTER: 2
+PRINTER: 2

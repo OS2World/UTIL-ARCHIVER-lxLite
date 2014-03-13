@@ -1,5 +1,7 @@
 @echo off
 
+setlocal
+
 set vpbase=p:\vp21
 set PATH=%vpbase%\bin.os2;%PATH%
 set BEGINLIBPATH=%vpbase%\bin.os2;
@@ -8,8 +10,8 @@ set vpcopt=/$P+ /$S- /$Speed- /$I- /$AlignCode- /$AlignData- /ucommon;%vpbase%\u
 set rcopt=-r -n -i %vpbase%\source\rtl
 
 if .%_4ver%. == .. goto okay
-echo This batch file is best viewed with CMD.EXE :-)
-echo (But works with 4os2 too ;-)
+REM echo This batch file is best viewed with CMD.EXE :-)
+REM echo (But works with 4os2 too ;-)
 REM exit
 
 :okay
@@ -65,7 +67,12 @@ copy out\unLock.exe ..\lxLite\  1>nul
 
 echo Well done. Now change to ..\ directory and run m_lxLite.cmd
 
+endlocal
+goto ExitBatch
 REM exit
 
 :Error
+endlocal
 echo Project not completed
+
+:ExitBatch

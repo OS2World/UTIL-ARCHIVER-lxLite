@@ -1,18 +1,16 @@
 @echo off
 
-setlocal
-
-set vpbase=p:\vp21
+set vpbase=G:\vp20
 set PATH=%vpbase%\bin.os2;%PATH%
-set BEGINLIBPATH=%vpbase%\bin.os2;
+set BEGINLIBPATH = %vpbase%\bin.os2;
 
-set vpcopt=/$P+ /$S- /$Speed- /$I- /$AlignCode- /$AlignData- /ucommon;%vpbase%\units.os2;%vpbase%\source\rtl;%vpbase%\source\os2 /i%vpbase%\source\rtl /l%vpbase%\lib.os2 /oout /m
+set vpcopt=/$P+ /CO /$S- /$Speed- /$I- /$AlignCode- /$AlignData- /ucommon;%vpbase%\units.os2;%vpbase%\source\rtl;%vpbase%\source\os2 /i%vpbase%\source\rtl /l%vpbase%\lib.os2 /oout /m
 set rcopt=-r -n -i %vpbase%\source\rtl
 
 if .%_4ver%. == .. goto okay
-REM echo This batch file is best viewed with CMD.EXE :-)
-REM echo (But works with 4os2 too ;-)
-REM exit
+echo This batch file is best viewed with CMD.EXE :-)
+cmd /c %0
+exit
 
 :okay
 mkdir out 1>nul 2>nul
@@ -34,7 +32,7 @@ rc %rcopt% os2api.rc
 if errorlevel == 1 goto Error
 :skip3
 
-if exist out\lxlite.exe goto skip4
+rem if exist out\lxlite.exe goto skip4
 vpc %vpcopt% lxLite.pas
 if errorlevel == 1 goto Error
 :skip4
@@ -59,20 +57,15 @@ vpc %vpcopt% unLock.pas
 if errorlevel == 1 goto Error
 :skip8
 
-copy out\lxLite.exe ..\lxLite\  1>nul
-copy out\chCase.exe ..\lxLite\  1>nul
-copy out\noEA.exe ..\lxLite\  1>nul
-copy out\sysIcons.exe ..\lxLite\  1>nul
-copy out\unLock.exe ..\lxLite\  1>nul
+copy out\lxLite.exe	..\lxLite\	1>nul
+copy out\chCase.exe	..\lxLite\	1>nul
+copy out\noEA.exe	..\lxLite\	1>nul
+copy out\sysIcons.exe	..\lxLite\	1>nul
+copy out\unLock.exe	..\lxLite\	1>nul
 
 echo Well done. Now change to ..\ directory and run m_lxLite.cmd
 
-endlocal
-goto ExitBatch
-REM exit
+exit
 
 :Error
-endlocal
 echo Project not completed
-
-:ExitBatch
